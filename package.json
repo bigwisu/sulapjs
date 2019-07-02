@@ -1,0 +1,37 @@
+{
+  "name": "sulapjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha --exit"
+  },
+  "bin": {
+    "sulap": "bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sulapjs/sulapjs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sulapjs/sulapjs/issues"
+  },
+  "homepage": "https://github.com/sulapjs/sulapjs#readme",
+  "dependencies": {
+    "boxen": "^4.1.0",
+    "figlet": "^1.2.3",
+    "fs-extra": "^8.1.0",
+    "ora": "^3.4.0",
+    "prompts": "^2.1.0",
+    "yargonaut": "^1.1.4",
+    "yargs": "^13.2.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1"
+  }
+}
