@@ -77,8 +77,8 @@ export default function Register(props) {
                             </Form.Group>
 
                             <Form.Group controlId="formBasicPassword">
-                                <Form.Label>Username</Form.Label>
-                                <Form.Control type="text" placeholder="Username" value={ name } onChange={ (e) => setName(e.target.value) }/>
+                                <Form.Label>Full Name</Form.Label>
+                                <Form.Control type="text" placeholder="Full Name" value={ name } onChange={ (e) => setName(e.target.value) }/>
                             </Form.Group>
 
                             <Form.Group controlId="formBasicPassword">
@@ -97,7 +97,12 @@ export default function Register(props) {
                                     Register
                                 </Button>
                                 </Col>
-                                <Col lg={8} className='d-flex justify-content-center align-items-center'>
+                                <Col lg={2} style={{ padding:0 }}>
+                                    <Link to='/'>
+                                        <Button block variant='secondary'> <i className="fas fa-home"></i> </Button>
+                                    </Link>
+                                </Col>
+                                <Col lg={6} className='d-flex justify-content-center align-items-center'>
                                     <Link to='/login'> 
                                         <Form.Text className="text-muted" >
                                             have an account ?
